@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #8</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    
+        var textValidate = function(text){
+
+            var mayusculas = /[A-Z]/g;
+            var minusculas = /[a-z]/g;
+
+            if(!text.match(mayusculas)){
+                console.log('el esta formado solo por minusculas')
+            }else if(!text.match(minusculas)){
+                console.log('el esta formado solo por mayuculas');
+            }else{
+                console.log('el esta formado por ambas, mayusculas y minusculas');
+            }
+        }
+
+        textValidate('Provando cadena de Texto');
+
+    </script>
+</body>
+</html>
