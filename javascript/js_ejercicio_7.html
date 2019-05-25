@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #8</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+            
+        var validarNumero = function(n){
+
+            var mensaje = '';
+
+            if(n % 1 == 0){
+                mensaje += 'el numero es entero y tambien';
+                if(n % 2 == 0) {
+                    mensaje += ' par';
+                }else{
+                    mensaje += ' impar';
+                }
+            }
+
+            console.log(mensaje);
+        }
+
+        validarNumero(24);
+
+    </script>
+</body>
+</html>
