@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #9</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    
+    var esPalindromo = function(value){
+
+        var frase = value.toLowerCase().replace(/\s/g,"");
+        var fraseAlreves = frase.split('').reverse().toString();
+
+        for (var i = 0; i < (fraseAlreves.length -1); i++) {
+            fraseAlreves = fraseAlreves.replace(',', '');
+        };
+
+        if(frase === fraseAlreves){
+            console.log('Es un palindromo');
+        }else{
+            console.log('no es un palindromo');
+        }
+
+    }
+
+    esPalindromo('Isaacno ronca asi');
+    
+    </script>
+</body>
+</html>
