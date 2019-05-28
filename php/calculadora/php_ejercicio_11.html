@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio #11</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="calculadora">
+
+            <div class="box box-1"><h2>Operación:</h2></div>
+            <div class="box box-2">
+                <div>
+                    <label for="suma">Suma:</label> 
+                    <input type="radio" name="operacion" value="suma" id="suma">
+                </div>
+                <div>
+                    <label for="resta">Resta:</label> 
+                    <input type="radio" name="operacion" value="resta" id="resta">
+                </div>
+                <div>
+                    <label for="multiplicacion">Multiplicacion:</label> 
+                    <input type="radio" name="operacion" value="multiplicacion" id="multiplicacion">
+                </div>
+                <div>
+                    <label for="division">Division:</label> 
+                    <input type="radio" name="operacion" value="division" id="division">
+                </div>
+            </div>
+            <div class="box box-3">
+                <label for="value01">Valor #1: </label> <input type="text" name="value01" id="value01">
+            </div>
+            <div class="box box-4">
+                <label for="value02">Valor #2:</label> <input type="text" name="value02" id="value02">
+            </div>
+
+            <div class="box box-5">
+                <input type="button" value="Calcular" id="calcular" class="button">
+            </div>
+
+            <div class="box box-6">
+                <div class="resultado" id="resultado">0</div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="./assets/jquery-3.4.1.min.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
