@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./../share/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="p-5" method="POST" action="server.php">
+
+            <div class="form-group">
+                <label for="inputName">Nombre</label>
+                <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Pablo Mendez ..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEmail">Correo</label>
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="usuario@dominio.com">
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="password">
+                <div class="pass-msn alert alert-danger" role="alert">
+                    La clave debe de tener al menos 6 caracteres, un digito, una mayuscula y una minucula.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputDate">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="inputDate" name="inputDate">
+            </div>
+
+            <div class="form-group">
+                <input type="hidden" id="inputHidden" value="" name="inputHidden">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+
+        </form>
+    </div>
+    <script src="./../share/js/jquery-3.4.1.min.js"></script>
+    <script src="./../share/js/utils.js"></script>
+</body>
+
+</html>
