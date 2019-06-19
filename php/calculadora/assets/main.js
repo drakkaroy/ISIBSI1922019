@@ -17,6 +17,9 @@ $(document).ready(function(){
             data: {op: $op, value1: $value1.val(), value2: $value2.val()},
             success: function(result){
                 $("#resultado").html(result);
+            },
+            error: function ( request, status, error) {
+                console.log(request.responseText);
             }
         });
 
