@@ -14,7 +14,8 @@ class Db {
 		$this->connection->set_charset($charset);
     }
     
-    public function query($query) {
+    public function query($query) {		
+		//echo $query;
 		if ($this->query = $this->connection->prepare($query)) {
             if (func_num_args() > 1) {
                 $x = func_get_args();
