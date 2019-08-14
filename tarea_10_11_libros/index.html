@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 align="center">CRUD de Libros</h1>
+    <a class="w3-button w3-red" href="logout.php">Cerrar sesion</a>
+    <br>
+    <TABLE>
+        <tr>
+            <th>
+                <form id="formulario">
+
+                    <h3>Agregar Libro</h3>
+                    <label>Titulo</label>
+                    <br>
+                    <input class="w3-container" id="titulo" type="text">
+                    <br>
+                    <br>
+                    <label>Autor</label>
+                    <br>
+                    <input class="w3-container" type="text" id="autor">
+                    <br>
+                    <br>
+                    <label>Editorial</label>
+                    <br>
+                    <input class="w3-container" type="text" name="editorial" id="editorial" />
+                    <br>
+                    <br>
+                    <label>Precio</label>
+                    <br>
+                    <input class="w3-container" type="number" name="precio" id="precio" />
+
+                    <input type="hidden" name="hidden" id="hidden" />
+                    <br>
+                    <button class="w3-button w3-white w3-border" name="Agregar" id="Agregar">
+                        Agregar
+                    </button>
+                    <br>
+
+
+
+
+                </form>
+
+            </th>
+            <th>
+                <h3>Actualizar Libro</h3>
+                <form id="formulario">
+                    <label>Codigo del libro</label>
+                    <br>
+                    <input class="w3-container" id="identificador" type="number">
+                    <br>
+                    <br>
+                    <label>Titulo</label>
+                    <br>
+                    <input class="w3-container" id="tituloA" type="text">
+                    <br>
+                    <br>
+                    <label>Autor</label>
+                    <br>
+                    <input class="w3-container" type="text" id="autorA">
+                    <br>
+                    <br>
+                    <label>Editorial</label>
+                    <br>
+                    <input class="w3-container" type="text" name="editorialA" id="editorialA" />
+                    <br>
+                    <br>
+                    <label>Precio</label>
+                    <br>
+                    <input class="w3-container" type="number" name="precioA" id="precioA" />
+                    <br>
+                    <button class="w3-button w3-white w3-border" name="Actualizar" id="Actualizar">
+                        Actualizar
+                    </button>
+                    <br>
+                    <br>
+                    </div>
+
+                </form>
+
+            </th>
+            <th>
+
+                <form left="200px">
+                    <h3>Eliminar Libro</h3>
+                    <label>Codigo de Libro</label>
+                    <br>
+                    <input class="w3-container" type="number" name="identificadorE" id="identificadorE" />
+                    <br>
+
+                    <button class="w3-button w3-red" name="Eliminar" id="Eliminar">
+                        Eliminar
+                    </button>
+                </form>
+
+            </th>
+
+            <th>
+
+                <form left="200px">
+                    <h3>Procedimiento 1</h3>
+                    <label> Editorial</label>
+                    <br>
+                    <input class="w3-container" type="text" name="editorialSP" id="editorialSP" />
+                    <br>
+
+                    <button class="w3-button w3-red" name="Aumentar10" id="Aumentar10">
+                        Aumentar 10%
+                    </button>
+                </form>
+
+            </th>
+
+            <th>
+
+                <form left="200px">
+                    <h3>Procedimiento 2</h3>
+                    <label> Editorial</label>
+                    <br>
+                    <input class="w3-container" type="text" name="editorialSP2" id="editorialSP2" />
+                    <br>
+                    <label> Porcentaje</label>
+                    <br>
+                    <input class="w3-container" type="number" name="porcentaje" id="porcentaje" value="10" />
+                    <br>
+
+                    <button class="w3-button w3-red" name="AumentarPorcentaje" id="AumentarPorcentaje">
+                        Aumentar Porcentaje
+                    </button>
+                </form>
+
+            </th>
+        </tr>
+
+    </table>
+
+    <table class="w3-table-all" id="Tabla" name="Tabla">
+
+
+
+    </table>
+
+    <script src="../share/js/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
